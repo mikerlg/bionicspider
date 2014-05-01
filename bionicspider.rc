@@ -1,0 +1,580 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\bionicspider.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\bionicspider.ico"
+IDI_ICON_FOLDER         ICON                    "icons\\fold.ico"
+IDI_ICON_FOLDER_OPEN    ICON                    "icons\\foldopen.ico"
+IDI_ICON_ROOT           ICON                    "icons\\rootfold.ico"
+IDI_ICON_ROOT_OPEN      ICON                    "icons\\rootfoldopen.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 195, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CTEXT           "BionicSpider Lite",IDC_BS_TITLE,8,64,117,8,SS_NOPREFIX
+    CTEXT           "Copyright © 2003-2006",IDC_COPYRIGHT,8,76,117,8
+    CTEXT           "website addy",IDC_WEB_ADDRESS,8,103,116,8
+    CTEXT           "email addy",IDC_EMAIL,10,114,110,8
+    CONTROL         156,IDC_ABOUT,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,
+                    181,47
+    CTEXT           "\n\nOK",IDC_STATIC_OK,132,67,49,44
+    GROUPBOX        "",IDC_STATIC_FRAME,7,53,119,75
+    GROUPBOX        "",IDC_STATIC_FRAME_REG,7,125,181,19
+    CTEXT           "Mike LeonGuerrero",IDC_AUTHOR,14,90,111,8
+    CTEXT           "Enjoy this free program!",IDC_USER,15,132,164,8
+END
+
+IDD_BIONICSPIDER_DIALOG DIALOGEX 0, 0, 215, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Mahalosoft BionicSpider 2.0 TEST BETA"
+MENU IDR_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BIONICTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_NOTOOLTIPS | WS_BORDER | WS_TABSTOP,1,2,213,233
+END
+
+IDD_EDITDLG DIALOGEX 0, 0, 186, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_INPUT,7,20,172,12,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_EDIT_TEXT,7,8,172,8
+    PUSHBUTTON      "&Ok",IDOK,37,33,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,96,33,50,14
+END
+
+IDD_DIALOG_HOTKEYS DIALOGEX 0, 0, 217, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "BionicSpider HotKey Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,104,98,54,14
+    PUSHBUTTON      "&Set HotKey",IDC_BUTTON_HOTKEY,103,25,54,19
+    LTEXT           "Enter a HotKey shortcut from the keyboard. i.e. Ctrl+Alt+Z",
+                    IDC_STATIC,105,48,103,19
+    PUSHBUTTON      "&Default Keys",IDC_BUTTON_HOTKEY_DEFAULT,104,68,52,14
+    CONTROL         "&Enable HotKeys",IDC_CHECK_HOTKEYS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,106,84,66,10
+    CONTROL         "",IDC_TAB_HOTKEY_TYPE,"SysTabControl32",0x0,7,6,92,105
+    LISTBOX         IDC_LIST_HOTKEYS,11,26,83,81,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Remove",IDC_BUTTON_HOTKEY_TOGGLE,159,25,51,19
+    PUSHBUTTON      "R&emove All",IDC_BUTTON_HOTKEY_REMOVE_ALL,158,68,52,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,98,50,14
+END
+
+IDD_UPDATE_CHECK DIALOGEX 0, 0, 186, 75
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU | 
+    WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,54,50,14
+    CTEXT           "Update Text",IDC_UPDATE_MSG,7,9,172,19
+    CTEXT           "URL",IDC_UPDATE_ADDRESS,11,34,161,8
+END
+
+IDD_UPGRADE_MSG DIALOGEX 0, 0, 186, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Upgrade"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,58,50,14
+    CTEXT           "URL",IDC_UPGRADE_URL,7,35,172,8
+    CTEXT           "Please upgrade!",IDC_UPGRADE_TEXT,7,15,172,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Mahalosoft"
+            VALUE "FileDescription", "Multiple Desktop Manager"
+            VALUE "FileVersion", "2.0.0"
+            VALUE "InternalName", "bionicspider.exe"
+            VALUE "LegalCopyright", "(c) Mahalosoft.  All rights reserved."
+            VALUE "OriginalFilename", "bionicspider.exe"
+            VALUE "ProductName", "BionicSpider Lite"
+            VALUE "ProductVersion", "2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_BIONICSPIDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 214
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_EDITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DIALOG_HOTKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_UPDATE_CHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_UPGRADE_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "&BionicSpider"
+    BEGIN
+        POPUP "&Group(s)"
+        BEGIN
+            MENUITEM "...",                         ID_GROUP_ONE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Always on &top",              ID_BIONICSPIDER_ALWAYSONTOP
+        MENUITEM "&Auto Group",                 ID_BIONICSPIDER_AUTOGROUP
+        MENUITEM "&Warnings",                   ID_BIONICSPIDER_WARNINGS
+        MENUITEM "Select &row",                 ID_BIONICSPIDER_FULLROW
+        MENUITEM "Ani&mate",                    ID_BIONICSPIDER_ANIMATE
+        MENUITEM SEPARATOR
+        MENUITEM "&Popup/Hide",                 ID_BIONICSPIDER_TRAYPOPUP
+        POPUP "&Docking"
+        BEGIN
+            MENUITEM "&Enable",                     ID_DOCKING_ENABLEDOCKING
+            MENUITEM SEPARATOR
+            MENUITEM "&Right side",                 ID_DOCKING_RIGHT
+            MENUITEM "&Left side",                  ID_DOCKING_LEFT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Toggle Groups",              ID_BIONICSPIDER_SWITCHGROUP
+        MENUITEM "Toggle W&indows",             ID_BIONICSPIDER_SWITCHWINDOWS
+
+        MENUITEM "Toggle C&orners",             ID_BIONICSPIDER_SWITCHCURSOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hotkeys...",                 ID_BIONICSPIDER_HOTKEYS
+        MENUITEM "&Font...",                    ID_BIONICSPIDER_FONTS
+        MENUITEM SEPARATOR
+        MENUITEM "Hide/&Show",                  ID_BIONICSPIDER_HIDE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_BIONICSPIDER_EXIT
+    END
+    POPUP "&All/Groups"
+    BEGIN
+        MENUITEM "&Hide Group(s)\tSPC",         ID_ROOT_HIDEALLGROUPS
+        MENUITEM "&Show Group(s)\tCtrl+W",      ID_ROOT_SHOWALLGROUPS
+        MENUITEM SEPARATOR
+        MENUITEM "&Maximize Group(s)\tCtrl+A",  ID_ROOT_MAXIMIZEALLGROUPS
+        MENUITEM "M&inimize Group(s)\tCtrl+S",  ID_ROOT_MINIMIZEALLGROUPS
+        MENUITEM "Rest&ore Group(s)\tCtrl+D",   ID_ROOT_RESTOREALLGROUPS
+        MENUITEM SEPARATOR
+        MENUITEM "Colla&pse Groups(s)",         ID_ROOT_COLLAPSE
+        MENUITEM "&Expand Group(s)",            ID_ROOT_EXPAND
+        MENUITEM SEPARATOR
+        MENUITEM "&Add Group...\tCtrl+R",       ID_ROOT_ADDGROUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sort Gro&up(s)",              ID_ROOT_SORTALLGROUPS
+        MENUITEM "&Close Group(s)",             ID_ROOT_CLOSEALLGROUPS
+        MENUITEM "Remo&ve all windows",         ID_ROOT_REMOVEWINDOWSINALLGROUPS
+
+        MENUITEM "&Remove Group(s)",            ID_ROOT_REMOVEALLGROUPS
+    END
+    POPUP "&Group"
+    BEGIN
+        MENUITEM "&Hide Group\tAlt+Q",          ID_GROUP_HIDEALLWINDOWS
+        MENUITEM "&Show Group\tAlt+W",          ID_GROUP_SHOWALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "&Maximize Group\tAlt+A",      ID_GROUP_MAXIMIZEALLWINDOWS
+        MENUITEM "M&inimize Group\tAlt+S",      ID_GROUP_MINIMIZEALLWINDOWS
+        MENUITEM "Rest&ore Group\tAlt+D",       ID_GROUP_RESTOREALLWINDOWS
+        MENUITEM SEPARATOR
+        POPUP "&Tile windows"
+        BEGIN
+            MENUITEM "1x1 &Horizontal\tAlt+H",      ID_TILEWINDOWS_1X1HORT
+            MENUITEM "1x1 &Vertical\tAlt+V",        ID_TILEWINDOWS_1X1VERT
+            MENUITEM "&2x2\tAlt+2",                 ID_TILEWINDOWS_2X2
+        END
+        POPUP "Group &positions"
+        BEGIN
+            MENUITEM "&Group memory\tCtrl+M",       ID_GROUPPOSITIONS_GROUPMEMORY
+
+            MENUITEM "Reca&ll all\tAlt+M",          ID_GROUPPOSITIONS_RECALLALL
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Add Window By Title...",     ID_GROUP_ADDWINDOWBYTITLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Sort Group",                 ID_GROUP_SORTALLWINDOWSINGROUP
+
+        MENUITEM "&Close Group",                ID_GROUP_CLOSEALLWINDOWSINGROUP
+
+        MENUITEM "Remo&ve windows",             ID_GROUP_REMOVEALLWINDOWSINGROUP
+
+        MENUITEM "&Remove Group",               ID_GROUP_REMOVETHISGROUP
+        MENUITEM "R&ename Group...",            ID_GROUP_RENAMETHISGROUP
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Hide\tCtrl+L",               ID_WINDOW_HIDEWINDOW
+        MENUITEM "&Show\tCtrl+K",               ID_WINDOW_SHOWWINDOW
+        MENUITEM "&Foreground\tCtrl+J",         ID_WINDOW_FOREGROUNDWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Maximize",                   ID_WINDOW_MAXIMIZE
+        MENUITEM "M&inimize",                   ID_WINDOW_MINIMIZE
+        MENUITEM "Rest&ore",                    ID_WINDOW_RESTORE
+        MENUITEM SEPARATOR
+        MENUITEM "Minimize to &tray",           ID_WINDOW_MINIMIZETOTRAY
+        MENUITEM "A&lways on top",              ID_WINDOW_ALWAYSONTOP
+        MENUITEM SEPARATOR
+        POPUP "&Positioning"
+        BEGIN
+            MENUITEM "M&emory",                     ID_POSITIONING_MEMORY
+            MENUITEM "Rec&all",                     ID_POSITIONING_RECALL
+        END
+        POPUP "E&xplorer"
+        BEGIN
+            MENUITEM "Conso&le",                    ID_EXPLORER_CONSOLE
+            MENUITEM "&Clone",                      ID_EXPLORER_CLONE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_WINDOW_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "R&ename...",                  ID_WINDOW_RENAME
+        MENUITEM "&Remove",                     ID_WINDOW_REMOVE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents...",                ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Check for updates...",       ID_HELP_CHECKFORUPDATE
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_WEBSEEKER    BITMAP                  "img\\bs2_seekerweb_8bpp.bmp"
+IDB_BITMAP_EMPTYWEBSEEKER BITMAP                  "img\\bs2_seekeroff_8bpp.bmp"
+IDB_BITMAP_1x1_HORT     BITMAP                  "img\\menu_1x1_HORT.bmp"
+IDB_BITMAP_1x1_VERT     BITMAP                  "img\\menu_1x1_VERT.bmp"
+IDB_BITMAP_2x2          BITMAP                  "img\\menu_2X2.bmp"
+IDB_ABOUT               BITMAP                  "img\\about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_WEBSEEKER    CURSOR                  "cursor\\webcursor.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL ACCELERATORS 
+BEGIN
+    "Q",            ID_GROUP_HIDEALLWINDOWS, VIRTKEY, ALT, NOINVERT
+    "A",            ID_GROUP_MAXIMIZEALLWINDOWS, VIRTKEY, ALT, NOINVERT
+    "S",            ID_GROUP_MINIMIZEALLWINDOWS, VIRTKEY, ALT, NOINVERT
+    "D",            ID_GROUP_RESTOREALLWINDOWS, VIRTKEY, ALT, NOINVERT
+    "W",            ID_GROUP_SHOWALLWINDOWS, VIRTKEY, ALT, NOINVERT
+    "M",            ID_GROUPPOSITIONS_GROUPMEMORY, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "M",            ID_GROUPPOSITIONS_RECALLALL, VIRTKEY, ALT, NOINVERT
+    "R",            ID_ROOT_ADDGROUP,       VIRTKEY, CONTROL, NOINVERT
+    VK_SPACE,       ID_ROOT_HIDEALLGROUPS,  VIRTKEY, NOINVERT
+    "A",            ID_ROOT_MAXIMIZEALLGROUPS, VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_ROOT_MINIMIZEALLGROUPS, VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_ROOT_RESTOREALLGROUPS, VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_ROOT_SHOWALLGROUPS,  VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_TILEWINDOWS_1X1HORT, VIRTKEY, ALT, NOINVERT
+    "V",            ID_TILEWINDOWS_1X1VERT, VIRTKEY, ALT, NOINVERT
+    "2",            ID_TILEWINDOWS_2X2,     VIRTKEY, ALT, NOINVERT
+    "J",            ID_WINDOW_FOREGROUNDWINDOW, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_WINDOW_HIDEWINDOW,   VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_WINDOW_SHOWWINDOW,   VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About BionicSpider..."
+    IDS_APP_NAME            "BionicSpider Lite"
+    IDS_WARNING_REMOVE_WINDOW "Remove current window?"
+    IDS_WARNING_REMOVE_GROUP 
+                            "Are you sure you want to remove this group and ALL its associated windows?"
+    IDS_WARNING_REMOVE_ALL_GROUPS 
+                            "Are you sure you want to remove ALL GROUPS and their associated windows?"
+    IDS_WARNING_GROUP_NOT_SELECTED 
+                            "You have not selected a Group.  If you have ""All Groups"" selected, then the first Group will be acted upon.  If a window is selected, then it's parent Group will be acted upon."
+    IDS_WARNING_SINGLE_GROUP "You must have at least one Group."
+    IDS_GROUP_NEW           "Enter a GROUP name:"
+    IDS_ROOT_NEW            "Enter a new ROOT label:"
+    IDS_WINDOW_RENAME       "Enter a WINDOW name:"
+    IDS_ROOT_DEFAULT_NAME   "All Groups"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GROUP_DEFAULT_NAME  "GROUP 1"
+    IDS_INFO_SELECTION_ROOT " Always On Top: %s\n Warnings: %s\n PopUp/Hide: %s\n Auto Group: %s\n Toggle Corners: %s\n HotKey(s): %s"
+    IDS_HOTKEY_DEFAULT_GROUPS "ctrl+112+0:"
+    IDS_WARNING_CLOSE_WINDOW "Are you sure you want to close this window?"
+    IDS_HOTKEY_LIST         "Switch Group Up+Switch Group Down+Hide/Show All Groups+Hide/Show Group+Hide/Show Spider"
+    IDS_INVALID_HOTKEY      "Invalid Hotkey combination."
+    IDS_REGISTRY_PATH       "Software\\BionicSpiderLite"
+    IDS_HOTKEY_REGKEY_MISC  "hotkeys_misc"
+    IDS_HOTKEY_DEFAULT_MISC "ctrl+alt+65+3:ctrl+alt+49+4:ctrl+alt+81+2:ctrl+alt+76+1:ctrl+alt+80+0:"
+    IDS_DEFAULT_GROUP       "Group 1"
+    IDS_GROUPS_REGKEY       "groups"
+    IDS_MENU_DEFAUTS        "1:1:0:0:1:1:0:1:1:1:0:1:"
+    IDS_MENU_REGKEY         "menu_settings"
+    IDS_EXIT_WARNING        "Are you sure you want to exit?"
+    IDS_SEEKER_WARNING      "This window has already been grouped."
+    IDS_HOTKEY_DEFAULT_WARNING 
+                            "Are you sure you want to reset all HotKeys to defaults?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HOTKEY_WARNING      "Are you sure you want to change this HotKey?"
+    IDS_WEB_URL             "http://www.mahalosoft.com"
+    IDS_EMAIL               "support@mahalosoft.com"
+    IDS_UPDATE_SCRIPT_URL   "http://www.mahalosoft.com/cgi-bin/chkup.pl?bionicspider="
+    IDS_INFO                "Grouped: %d\nVisible: %d\nHidden: %d\nGroups: %d"
+    IDS_WINMEMORY           "The window position has been saved."
+    IDS_INFO_SELECTION_GROUP "[w: %d, s: %d, h: %d, hk: %s]"
+    IDS_GROUPMEMORY         "All window positions have been saved for this Group."
+    IDS_ADDWINCAP           "Add a window by caption."
+    IDS_ADDWINCAP_DEFAULT   "Enter the window caption."
+    IDS_ADDWINCAP_ERROR     "A window by that caption could not found."
+    IDS_HOTKEY_REMOVE       "Are you sure you want to remove this hotkey?"
+    IDS_HOTKEY_REMOVE_ALL   "Are you sure you want to remove ALL hotkeys?"
+    IDS_TOOLTIP_SEEKER      "Drag and drop the web over a window to Group it."
+    IDS_TOOLTIP_HOTKEY_EDIT "Enter a hotkey combination i.e. Ctrl+Alt+Z and press ""Set HotKey"" for it to take effect."
+    IDS_TOOLTIP_HOTKEY_SET  "Makes the current HotKey combination take effect."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLTIP_HOTKEY_REMOVE 
+                            "Removes and disables the current HotKey from the system if the HotKey is enabled.  If the HotKey is disabled, this button will enable it."
+    IDS_TOOLTIP_HOTKEY_DEFAULT 
+                            "Removes all currently defined HotKeys and sets the default HotKey configuration."
+    IDS_TOOLTIP_HOTKEY_REMOVE_ALL "Removes all currently defined HotKeys."
+    IDS_APP_TITLEBAR        "BionicSpider Lite"
+    IDS_APP_TITLEBAR_DOCKED "BionicSpider Lite"
+    IDS_UPDATECHECK_TRUE    "An UPDATE is available!"
+    IDS_UPDATECHECK_FALSE   "You have the most recent version."
+    IDS_UPDATECHECK_NONET   "An internet connection could not be found to check for updates."
+    IDS_INFO_WINDOW         "[Visible: %s,Top: %s,Tray: %s]"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_DELIMINATOR         ":"
+    IDS_MENU_CHECKED        "1"
+    IDS_MENU_UNCHECKED      "0"
+    IDS_BIONICSPIDER_VER    "BionicSpider Lite v2.0.0"
+    IDS_WARNING_CLOSE_GROUP "Are you sure you want to close and remove all windows in this Group?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WARNING_REMOVE_WINGROUP 
+                            "Do you want to remove all windows in this Group?"
+    IDS_WARNING_ROOT_CLOSE  "Close all windows in all Groups?"
+    IDS_WARNING_ROOT_REMOVE "Remove all windows in all Groups?"
+    IDS_HOTKEYDLG_ENABLE    "Enable"
+    IDS_HOTKEYDLG_REMOVE    "Remove"
+    IDS_TOOLTIP_HOTKEY_TABS "The ""Groups"" tab will set a hide/show hotkey for each group.  The ""Misc."" tab sets hotkeys for various commands."
+    IDS_HOTKEY_REGKEY_GROUPS "hotkeys_groups"
+    IDS_FONT_DEFAULT        "-11:0:0:0:400:0:0:0:0:0:0:0:0:MS Shell Dlg 2"
+    IDS_FONT_REGKEY         "font_tree"
+    IDS_FONT_COLOR_REGKEY   "font_color"
+    IDS_HELP_PATH           "help.html"
+    IDS_TRIAL_DAYS_LEFT     "Number Of Trial Days Left: %d"
+    IDS_TRIAL_UNREGISTRED   "UNREGISTERED"
+    IDS_TRIAL_KEY_INSTALLED "Your KEY has been installed."
+    IDS_TRIAL_KEY_INVALID   "INVALID KEY"
+    IDS_WEB_URL_UPDATE      "http://www.mahalosoft.com/bionicspider"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATECHECK_CHECKING "Checking For Updates..."
+    IDS_BIONICSPIDER_VERSION_NUM "2.0.0"
+    IDS_UPGRADE             "Please upgrade for this feature!"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\bionicspider.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
